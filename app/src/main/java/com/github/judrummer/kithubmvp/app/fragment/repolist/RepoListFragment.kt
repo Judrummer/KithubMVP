@@ -44,10 +44,8 @@ class RepoListFragment : Fragment(), RepoListContract.ViewAction {
     }
 
     override fun setProgressIndicator(active: Boolean) {
-
         rvRepoList.visibility = if (active) View.GONE else View.VISIBLE
         pbRepoList.visibility = if (active) View.VISIBLE else View.GONE
-
     }
 
     override fun showError(errorMessage: String) {
