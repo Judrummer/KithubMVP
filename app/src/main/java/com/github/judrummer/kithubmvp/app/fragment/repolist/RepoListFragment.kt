@@ -73,7 +73,7 @@ class RepoListFragment : Fragment(), RepoListContract.ViewAction {
         }
     }
 
-    inner class RepoListAdapter : RecyclerView.Adapter<RepoListViewHolder>() {
+    class RepoListAdapter : RecyclerView.Adapter<RepoListViewHolder>() {
 
         var repos by Delegates.observable(listOf<RepoListContract.RepoItem>()) { prop, old, new ->
             notifyDataSetChanged()
